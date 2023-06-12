@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace TGSAttributes
 {
+    /// <summary>
+    /// Attribute used to automatically get and assign references to components or interfaces in MonoBehaviour scripts from the children of the GameObject.
+    /// </summary>
     public class GetComponentInChilderenAttribute : Attribute, IFieldAttribute
     {
         public void Handle(MonoBehaviour target, FieldInfo fieldInfo, Attribute attribute)

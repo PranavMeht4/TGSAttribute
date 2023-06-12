@@ -14,7 +14,7 @@ public class Test : MonoBehaviour
 
     public bool showCam;
 
-    [Button("Test")]
+
     public void TestMethod()
     {
         Debug.Log("Tested");

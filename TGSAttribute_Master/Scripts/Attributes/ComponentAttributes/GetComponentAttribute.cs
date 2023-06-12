@@ -4,7 +4,10 @@ using UnityEngine;
 
 namespace TGSAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+    /// <summary>
+    /// Attribute used to automatically get and assign references to components or interfaces in MonoBehaviour scripts.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public class GetComponentAttribute : Attribute, IFieldAttribute
     {
         public void Handle(MonoBehaviour target, FieldInfo fieldInfo, Attribute attribute)

@@ -1,11 +1,12 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
 namespace TGSAttributes
 {
+    /// <summary>
+    /// Attribute used to automatically get and assign references to components or interfaces in MonoBehaviour scripts from the parent of the GameObject.
+    /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
     public class GetComponentInParentAttribute : Attribute, IFieldAttribute
     {
