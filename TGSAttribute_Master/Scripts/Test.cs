@@ -1,4 +1,5 @@
 using TGSAttributes;
+using TGSFeedback;
 using UnityEngine;
 
 public class Test : MonoBehaviour
@@ -18,5 +19,10 @@ public class Test : MonoBehaviour
     public void TestMethod()
     {
         Debug.Log("Tested");
+    }
+
+    private void Start()
+    {
+        // feedbackPreset.Play();
     }
 }
